@@ -7,6 +7,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.animate__fadeIn {
+  --animate-duration: 2s;
+}
+
 .banner{
   background-image: url(jaime.webp);
   position: relative;
@@ -133,4 +137,16 @@ a{
   background-color: rgba(27, 27, 29, 0.904);
   border-radius: 7px;
   transform: scale(1.1);
+}
+
+.revelar{
+  position: relative;
+  transform: translateY(144px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revelar.active{
+  transform: translateY(0);
+  opacity: 1;
 }

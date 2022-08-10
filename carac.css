@@ -7,6 +7,11 @@ html{
   scroll-behavior: smooth;
 }
 
+
+body{
+  height: 1400px;
+}
+
 p{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -101,4 +106,14 @@ h2{
   font-size: 25px;
 }
 
+.revelar{
+  position: relative;
+  transform: translateY(144px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.revelar.active{
+  transform: translateY(0);
+  opacity: 1;
+}
